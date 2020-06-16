@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if username == username %}
+<h3 class="title">
+  Welcome, {{g.user.username}} </h3>
+<h3>Email: {{g.user.email}} </h3>
+<h2 class="subtitle">
+  You are user number #{{g.user.id}}</h2>
+{% else %}
+<h5>Welcome, Guest</h5>
+{% endif %}
+<iframe src="https://www.pishop.us/" height="600" width="750"></iframe>  
+{% endblock content %}
